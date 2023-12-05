@@ -9,7 +9,6 @@ class TransactionModel(BaseModel):
     createdAt: datetime = Field(default_factory=datetime.utcnow)
     updatedAt: datetime = Field(default_factory=datetime.utcnow)
 
-
     def is_valid(self):
         if self.description is None:
             raise ValueError("No description is provided")

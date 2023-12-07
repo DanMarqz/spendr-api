@@ -9,5 +9,5 @@ def index():
     return JSONResponse({
         'Status': 'ok',
         'Name': 'Spendr!?',
-        'Date': datetime.datetime.now()
+        'Date': datetime.datetime.now().isoformat()
     })

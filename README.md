@@ -1,7 +1,7 @@
 ### Spendr API
 _Una API para crear un administrador de gastos_
 
-[![Generic badge](https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+[![](https://img.shields.io/badge/Live_preview-8A2BE2?color=darkgreen)](https://spendr-api.1.us-1.fl0.io/)
 
 Peticiones que se pueden hacer de acuerdo a las rutas:
 

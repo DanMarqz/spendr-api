@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from api.controllers.home import router as home
+from api.controllers.home import router as status
 from api.controllers.transactions import router as transactions
 
 app = FastAPI()
@@ -16,6 +17,7 @@ app.add_middleware(
 )
 
 app.include_router(home)
+app.include_router(status)
 app.include_router(transactions)
 
 if __name__ == "__main__":

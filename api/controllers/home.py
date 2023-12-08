@@ -7,7 +7,8 @@ router = APIRouter()
 @router.get("/")
 def index():
     return JSONResponse({
-        'Status': 'ok',
-        'Name': 'Spendr!?',
+        'label': 'ok',
+        'message': 'Budget Admin!?',
+        'color': 'green',
         'Date': datetime.datetime.now().isoformat()
     })

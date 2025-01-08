@@ -7,7 +7,6 @@ from fastapi.responses import JSONResponse
 
 from api.models.transactions_model import TransactionModel
 
-
 load_dotenv()
 uri = os.environ['MONGO_URI']
 client = MongoClient(uri)

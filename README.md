@@ -1,6 +1,8 @@
 ### Spendr API
 _Una API para crear un administrador de gastos_
 
+Python 3.11
+
 [![](https://img.shields.io/badge/Live_preview-8A2BE2?color=darkgreen)](https://spendr-api.1.us-1.fl0.io/)
 
 Para ejecutar este proyecto es necesario:
@@ -31,7 +33,7 @@ pip install -r requirements.txt
 
 * Ejecutar el proyecto:
 ```bash
-uvicorn main:app --hsot 0.0.0.0 --port 5000
+uvicorn main:app --host 0.0.0.0 --port 5000
 ```
 
 Peticiones que se pueden hacer de acuerdo a las rutas:

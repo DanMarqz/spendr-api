@@ -40,12 +40,12 @@ def getExpense(id):
 def createExpenses(expenses: TransactionModel):
     if not expenses.is_valid():
         raise HTTPException(status_code=400, detail="The expense data is not valid")
-    
+
     result = expensesCollection.insert_one({
-        'description': expenses.description,
-        'date': expenses.date,
-        'price': expenses.price,
-        'category': expenses.category
+        'description':  expenses.description,
+        'date':         expenses.date,
+        'price':        expenses.price,
+        'category':     expenses.category
     })
     return JSONResponse(str(result.inserted_id))
 

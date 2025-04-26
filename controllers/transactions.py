@@ -1,14 +1,13 @@
 import os
-from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from fastapi.responses import JSONResponse
 
-from api.models.transactions_model import TransactionModel
+from models.transactions_model import TransactionModel
+import utils.variables as variables
 
-load_dotenv()
-uri = os.environ['MONGO_URI']
+uri = variables.MONGO_URI
 client = MongoClient(uri)
 expensesCollection = client.budgetAdmin.expenses
 
